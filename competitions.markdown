@@ -3,8 +3,7 @@ layout: page
 title: "Competitions"
 ---
 
-# Competitions
-
+## Competitions
 Wondering if you want to compete, or whether it's right for you? Concerned about the thought of dancing in front of all those other people? Relax - we hear this from our beginners every year, but there's really nothing to worry about - it's all in the mind. Past members have always come out with a positive result and find they can't wait for the next competition! Read on to find out how to take part.
 
 ## The main events

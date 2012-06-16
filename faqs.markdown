@@ -2,7 +2,7 @@
 layout: page
 title: "FAQs"
 ---
-# Some common questions
+## Some common questions
 
 ### I'm not a student, can I still dance?
 Whilst we do cater for students and non-students, as a student society part funded by the University of Surrey Student's Union our priority is to offer dancing to students. We encourage all students to become members (it's cheaper for you that way!), but membership for non-students is at the discretion of the committee.
