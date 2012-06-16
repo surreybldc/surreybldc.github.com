@@ -4,6 +4,7 @@ title: "History"
 ---
 
 ## A little history
+From humble beginnings in 1998 we've built ourselves up year after year to form the club you know today.
 
 ### 2010-2011
 Jess Lee became president in the first half of the year, leading a strong and fresh new committee which (we think) set the club on its way to better things! We kicked off with a major technical overhaul and a shiny new WordPress-powered website, and followed up that by recruiting more punters than the rugby club at Active Freshers' Fayre! Sadly Jess's final year overwhelmed her with work eventually and in February we elected a new President (Liz Lerew), Vice President (Abi Wilson) and two new Social Secs (Tamsin Harding and Julia Janikova).
