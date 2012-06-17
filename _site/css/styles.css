@@ -74,7 +74,7 @@ header img {
 }
 .container,
 .spiel section header h2 {
-  max-width: 800px;
+  width: 940px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -127,26 +127,33 @@ nav li a {
 .row {
   clear: both;
 }
-.span3 {
-  width: 33%;
+.span4,
+.span2 {
   display: inline-block;
   vertical-align: top;
   padding: 0 20px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.span3:first-of-type {
+.span4 {
+  width: 33%;
+}
+.span2 {
+  width: 16.5%;
+}
+.span4:first-of-type,
+.span5:first-of-type {
   padding-left: 0;
 }
-.span3:last-of-type {
+.span4:last-of-type,
+.span5:first-of-type {
   padding-right: 0;
 }
 /* Bootstrap blockquotes */
-.span3 blockquote {
-  margin: 0;
-}
 blockquote {
   padding: 0 0 0 15px;
   border-left: 5px solid #EEE;
+  margin: 0;
 }
 blockquote p {
   margin-bottom: 0;
