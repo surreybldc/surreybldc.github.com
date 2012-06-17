@@ -10,7 +10,7 @@
   border-radius:6px;
   border:1px solid #777;
   display:inline-block;
-  color: #777777;
+  color: #093169;
   font-weight:bold;
   padding:10px 28px;
   text-decoration:none;
@@ -33,6 +33,7 @@ body {
 h1, h2, h3 {
   font-family: "Lobster13Regular";
   color: #093169;
+  font-weight: normal;
 }
 header.site {
   background-color: rgba(0, 0, 0, 0.05);
@@ -51,14 +52,12 @@ header small {
 }
 header h1 {
   font-size: 0.8em;
-  font-weight: normal;
 }
 header small {
   font-size: 0.6em;
 }
 header h2.strapline {
   font-size: 1.4em;
-  font-weight: normal;
   margin-bottom: 0;
   padding: 20px;
 }
@@ -74,9 +73,12 @@ header img {
 }
 .container,
 .spiel section header h2 {
-  width: 940px;
+  max-width: 940px;
   padding: 20px;
   margin: 0 auto;
+}
+.container-fixed {
+  width: 940px;
 }
 .hero-unit {
   background: url("/img/montage-web.jpg");
@@ -85,7 +87,6 @@ header img {
 }
 .hero-unit h2 {
   font-family: Helvetica Neue;
-  /* font-weight: normal; */
 }
 .hero-unit * {
 text-align: center;
@@ -96,7 +97,6 @@ text-align: center;
 }
 .hero-unit .btn {
   margin: 0 10px;
-  color: #093169;
 }
 nav {
   background-color: #f0f0f0;
@@ -123,12 +123,12 @@ nav li a {
   font-family: "Lobster13Regular";
   color: #555;
 }
-/* Utility */
+/* Grid system */
 .row {
   clear: both;
 }
-.span4,
-.span2 {
+/* Common to all column span classes */
+.span4 {
   display: inline-block;
   vertical-align: top;
   padding: 0 20px;
@@ -138,15 +138,10 @@ nav li a {
 .span4 {
   width: 33%;
 }
-.span2 {
-  width: 16.5%;
-}
-.span4:first-of-type,
-.span5:first-of-type {
+.span4:first-of-type {
   padding-left: 0;
 }
-.span4:last-of-type,
-.span5:first-of-type {
+.span4:last-of-type {
   padding-right: 0;
 }
 /* Bootstrap blockquotes */
