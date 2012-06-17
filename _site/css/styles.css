@@ -26,8 +26,15 @@ body {
 }
 body {
   padding-bottom: 80px;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #555;
 }
-header {
+h1, h2, h3 {
+  font-family: "Lobster13Regular";
+  color: #093169;
+}
+header.site {
   background-color: rgba(0, 0, 0, 0.05);
   text-align: center;
   padding: 20px 0 0;
@@ -40,6 +47,7 @@ header img {
 header h1,
 header small {
   text-transform: uppercase;
+  font-family: Helvetica Neue, Arial, sans-serif;
 }
 header h1 {
   font-size: 0.8em;
@@ -48,21 +56,24 @@ header h1 {
 header small {
   font-size: 0.6em;
 }
-header h2 {
-  border-top: 1px solid #c6c6c6;
-  border-bottom: 1px solid #c6c6c6;
+header h2.strapline {
   font-size: 1.4em;
   font-weight: normal;
-  background-color: rgba(0, 0, 0, 0.08);
   margin-bottom: 0;
   padding: 20px;
-  font-family: "Lobster13Regular";
+}
+header h2.strapline,
+.spiel section header {
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 header img {
   display: inline;
   height: 100px;
 }
-.container {
+.container,
+.spiel section header h2 {
   max-width: 800px;
   padding: 20px;
   margin: 0 auto;
@@ -107,8 +118,41 @@ nav li {
   padding: 20px;
 }
 nav li a {
-  color: #555;
   text-decoration: none;
   font-size: 1.4em;
   font-family: "Lobster13Regular";
+  color: #555;
+}
+/* Utility */
+.row {
+  clear: both;
+}
+.span3 {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.span3:first-of-type {
+  padding-left: 0;
+}
+.span3:last-of-type {
+  padding-right: 0;
+}
+/* Bootstrap blockquotes */
+.span3 blockquote {
+  margin: 0;
+}
+blockquote {
+  padding: 0 0 0 15px;
+  border-left: 5px solid #EEE;
+}
+blockquote p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+blockquote small {
+  display: block;
+  color: #999;
 }
