@@ -25,7 +25,7 @@ body {
   font-family: Helvetica Neue, Arial, sans-serif;
 }
 body {
-  padding-bottom: 80px;
+  padding-bottom: 65px;
   font-size: 1em;
   line-height: 1.5em;
   color: #555;
@@ -35,11 +35,19 @@ h1, h2, h3 {
   color: #093169;
   font-weight: normal;
 }
-header.site {
+header.site,
+footer.site {
   background-color: rgba(0, 0, 0, 0.05);
+  color: #093169;
+}
+header.site {
   text-align: center;
   padding: 20px 0 0;
-  color: #093169;
+}
+footer.site {
+  margin-top: 20px;
+  border-top: 1px solid #c6c6c6;
+  font-size: 0.8em;
 }
 header img {
   display: inline-block;
