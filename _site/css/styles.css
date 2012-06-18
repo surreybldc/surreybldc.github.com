@@ -120,6 +120,7 @@ nav li a {
 small {
   text-transform: uppercase;
   color: #999;
+  size: 0.8em;
 }
 /* Grid system */
 .row {
@@ -143,9 +144,11 @@ blockquote p {
   margin-bottom: 0;
   font-weight: 300;
 }
+blockquote small::before {
+  content: '\2014 \00A0';
+}
 blockquote small {
   display: block;
-  color: #999;
 }
 /* Bootstrap hr */
 hr {
