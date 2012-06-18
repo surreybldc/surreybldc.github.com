@@ -71,15 +71,6 @@ header img {
   display: inline;
   height: 100px;
 }
-.container,
-.spiel section header h2 {
-  max-width: 940px;
-  padding: 20px;
-  margin: 0 auto;
-}
-.container-fixed {
-  width: 940px;
-}
 .hero-unit {
   background: url("/img/montage-web.jpg");
   height: 400px;
@@ -89,7 +80,7 @@ header img {
   font-family: Helvetica Neue;
 }
 .hero-unit * {
-text-align: center;
+  text-align: center;
 }
 .hero-unit .btn-group {
   display: block;
@@ -123,32 +114,30 @@ nav li a {
   font-family: "Lobster13Regular";
   color: #555;
 }
+.attention {
+  color: #222;
+}
+small {
+  text-transform: uppercase;
+  color: #999;
+}
 /* Grid system */
 .row {
   clear: both;
 }
-/* Common to all column span classes */
-.span4 {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 20px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* Thumbnails */
+.thumbnail img {
+  display: block;
+  margin: 0 auto;
 }
-.span4 {
-  width: 33%;
-}
-.span4:first-of-type {
-  padding-left: 0;
-}
-.span4:last-of-type {
-  padding-right: 0;
+.thumbnail * {
+  text-align: center;
 }
 /* Bootstrap blockquotes */
 blockquote {
   padding: 0 0 0 15px;
   border-left: 5px solid #EEE;
-  margin: 0;
+  margin: 20px auto;
 }
 blockquote p {
   margin-bottom: 0;
@@ -157,4 +146,11 @@ blockquote p {
 blockquote small {
   display: block;
   color: #999;
+}
+/* Bootstrap hr */
+hr {
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid white;
 }
