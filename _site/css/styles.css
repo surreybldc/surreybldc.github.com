@@ -122,6 +122,10 @@ small {
   color: #999;
   size: 0.8em;
 }
+.grid_2.thumbnail img {
+  width: 125px;
+  height: 125px;
+}
 /* Grid system */
 .row {
   clear: both;
