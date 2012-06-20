@@ -41,8 +41,10 @@ footer.site {
   color: #093169;
 }
 header.site {
+  border-bottom: 1px solid #c6c6c6;
+}
+header.site h1 {
   text-align: center;
-  padding: 20px 0 0;
 }
 footer.site {
   margin-top: 20px;
@@ -50,67 +52,55 @@ footer.site {
   font-size: 0.8em;
 }
 header img {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 header h1 {
   text-transform: uppercase;
   font-family: Helvetica Neue, Arial, sans-serif;
   font-size: 0.8em;
 }
-header h2.strapline {
-  font-size: 1.4em;
-  margin-bottom: 0;
-  padding: 20px;
+h2.strapline {
+  font-size: 1.9em;
+  color: white;
+  line-height: 400px;
+  vertical-align: middle;
+  margin-top: -400px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  text-align: center;
 }
-header h2.strapline,
 .spiel section header {
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
   background-color: rgba(0, 0, 0, 0.08);
 }
 .hero-unit {
-  background: url("/img/montage-web.jpg");
+  background-image: url("/img/montage-web.jpg");
   height: 400px;
-  position: relative;
-}
-.hero-unit h2 {
-  font-family: Helvetica Neue;
-}
-.hero-unit * {
-  text-align: center;
-}
-.hero-unit .btn-group {
-  display: block;
-  padding-top: 180px;
-}
-.hero-unit .btn {
-  margin: 0 10px;
 }
 nav {
-  background-color: #f0f0f0;
-  border-top: 1px solid #c6c6c6;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 10;
+  text-align: center;
+  padding-top: 20px;
 }
-nav ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  display: block;
+nav > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+nav i {
+  font-size: 2.5em;
   text-align: center;
 }
-nav li {
-  display: inline-block;
-  padding: 20px;
-}
-nav li a {
+nav a {
   text-decoration: none;
-  font-size: 1.4em;
-  font-family: "Lobster13Regular";
   color: #555;
+}
+nav a:hover,
+nav a:hover *,
+nav a:active,
+nav a:active * {
+  color: #093169;
 }
 .attention {
   color: #222;
