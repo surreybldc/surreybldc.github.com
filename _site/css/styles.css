@@ -3,7 +3,6 @@
   box-shadow:inset 0px 1px 0px 0px #fff;
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
   background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
   background-color:#ededed;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
@@ -22,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("/img/bgnoise.gif");
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 body {
   /* padding-bottom: 65px; */
@@ -57,7 +56,7 @@ header img {
 }
 header h1 {
   text-transform: uppercase;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 0.8em;
 }
 h2.strapline {
@@ -108,7 +107,7 @@ nav a:active * {
 small {
   text-transform: uppercase;
   color: #999;
-  size: 0.8em;
+  font-size: 0.75em;
 }
 .grid_2.thumbnail img {
   width: 125px;
