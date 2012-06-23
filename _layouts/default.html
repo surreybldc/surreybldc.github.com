@@ -6,82 +6,90 @@
     <title>Surrey BLDC {% if page.title %} &middot; {{ page.title }} {% endif %}</title>
     <link rel="stylesheet" type="text/css" href="/fonts/Lobster-fontfacekit/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" media="all" href="css/960gs/960_12_col.css">
+    <!-- 1140px Grid styles for IE -->
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/cssgrid/1140.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
   <body>
-    <header class="site">
-      <nav class="container_12">
-        <a class="grid_1" href="/index.html">
-          <i class="icon-home"></i>
-          <br>
-          <small>Home</small>
-        </a>
-        <a class="grid_1" href="/history.html">
-          <i class="icon-info-sign"></i>
-          <br>
-          <small>History</small>
-        </a>
-        <a class="grid_1" href="/faqs.html">
-          <i class="icon-question-sign"></i>
-          <br>
-          <small>FAQs</small>
-        </a>
-        <a class="grid_1" href="/articles.html">
-          <i class="icon-pencil"></i>
-          <br>
-          <small>Articles</small>
-        </a>
-        <div class="grid_2 prefix_1 suffix_1">
-          <img src="/img/dancers-surrey-colours-web.png" alt="Club logo">
-          <h1>Surrey BLDC</h1>
-        </div>
-        <a class="grid_1" href="mailto:ussu.ballroom@surrey.ac.uk">
-          <i class="icon-envelope"></i>
-          <br>
-          <small>Email us</small>
-        </a>
-
-        <a class="grid_1" href="http://www.facebook.com/">
-          <i class="icon-facebook-sign"></i>
-          <br>
-          <small>Group</small>
-        </a>
-
-        <a class="grid_1" href="http://eepurl.com/gOKcn">
-          <i class="icon-list-alt"></i>
-          <br>
-          <small>Mailing list</small>
-        </a>
-
-        <a class="grid_1" href="http://www.ussu.co.uk/">
-          <i class="icon-shopping-cart"></i>
-          <br>
-          <small>Store</small>
-        </a>
-      </nav>
-    </header>
-    {{ content }}
-    <footer class="site">
-      <div class="container_12">
-        <div class="grid_6">
-          <h4><i class="icon-legal"></i> Legal</h4>
-          <p>&copy; Surrey BLDC and Chris Kilding, 2012. All rights reserved.</p>
-          <p>Facebook is a registered trademark of Facebook, Inc. All other trademarks are the property of their respective owners. Any Creative Commons works are used under their respective licenses.</p>
-        </div>
-        <div class="grid_5">
-          <h4><i class="icon-link"></i> Useful resources</h4>
-          <ul style="margin-left: 0">
-            <li><a href="http://www.dancerite.co.uk/">Dancerite</a> Our teachers’ school in Camberley.</li>
-            <li><a href="http://www.dsi-london.com/">DSI</a> Show them your uni ID card for shoes, costumes, etc. at a 25% student discount.</li>
-            <li><a href="http://www.universitydancesport.com/">University Dancesport (IVDA)</a> The organisation which coordinates our sport across all British universities.</li>
-          </ul>
-        </div>
-        <div class="grid_1">
-          <a href="http://www.w3.org/html/logo/">
-            <img style="padding-top: 40px" src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-semantics.png" width="38" height="138" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+    <div class="container">
+      <header class="site">
+        <nav class="row">
+          <a class="onecol" href="/index.html">
+            <i class="icon-home"></i>
+            <br>
+            <small>Home</small>
           </a>
+          <a class="onecol" href="/history.html">
+            <i class="icon-info-sign"></i>
+            <br>
+            <small>History</small>
+          </a>
+          <a class="onecol" href="/faqs.html">
+            <i class="icon-question-sign"></i>
+            <br>
+            <small>FAQs</small>
+          </a>
+          <a class="onecol" href="/articles.html">
+            <i class="icon-pencil"></i>
+            <br>
+            <small>Articles</small>
+          </a>
+          <div class="fourcol">
+            <img src="/img/dancers-surrey-colours-web.png" alt="Club logo">
+            <h1>Surrey BLDC</h1>
+          </div>
+          <a class="onecol" href="mailto:ussu.ballroom@surrey.ac.uk">
+            <i class="icon-envelope"></i>
+            <br>
+            <small>Email us</small>
+          </a>
+
+          <a class="onecol" href="http://www.facebook.com/">
+            <i class="icon-facebook-sign"></i>
+            <br>
+            <small>Group</small>
+          </a>
+
+          <a class="onecol" href="http://eepurl.com/gOKcn">
+            <i class="icon-list-alt"></i>
+            <br>
+            <small>Mailing list</small>
+          </a>
+
+          <a class="onecol last" href="http://www.ussu.co.uk/">
+            <i class="icon-shopping-cart"></i>
+            <br>
+            <small>Store</small>
+          </a>
+        </nav>
+      </header>
+      {{ content }}
+      <footer class="site">
+        <div class="row">
+          <div class="fourcol">
+            <h4><i class="icon-legal"></i> Legal</h4>
+            <p>&copy; Surrey BLDC and Chris Kilding, 2012. All rights reserved.</p>
+            <p>Facebook is a registered trademark of Facebook, Inc. All other trademarks are the property of their respective owners. Any Creative Commons works are used under their respective licenses.</p>
+          </div>
+          <div class="fourcol">
+            <h4><i class="icon-link"></i> Useful resources</h4>
+            <ul>
+              <li><a href="http://www.dancerite.co.uk/">Dancerite</a> Our teachers’ school in Camberley.</li>
+              <li><a href="http://www.dsi-london.com/">DSI</a> Show them your uni ID card for shoes, costumes, etc. at a 25% student discount.</li>
+              <li><a href="http://www.universitydancesport.com/">University Dancesport (IVDA)</a> The organisation which coordinates our sport across all British universities.</li>
+            </ul>
+          </div>
+          <div class="fourcol last">
+            <h4><i class="icon-globe"></i> Love your web</h3>
+            <p>
+              <a href="http://www.w3.org/html/logo/" style="float: right">
+                <img src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-semantics.png" width="38" height="138" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+              </a>
+              Surrey BLDC is proud to support web standards wherever possible, including responsive design and semantic markup.
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
