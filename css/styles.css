@@ -83,32 +83,10 @@ header h1 {
 .strapline i {
   bottom: 22%;
 }
-.spiel section header,
-.speech .row > * {
+.spiel section header {
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
   background-color: rgba(0, 0, 0, 0.08);
-}
-.speech .row > * {
-  border: 1px solid #c6c6c6;
-  padding: 20px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  position: relative;
-  margin-bottom: 20px;
-  height: 280px; /* Equal height as well */
-}
-.speech .row > *:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 30px;
-  bottom: -15px;
-  border: 7px solid;
-  border-color: #c6c6c6 transparent transparent #c6c6c6;
 }
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
@@ -151,6 +129,14 @@ a img {
 .container {
   padding-left: 0;
   padding-right: 0;
+}
+.container .row {
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
 }
 .row:first-of-type {
   padding-top: 20px;
