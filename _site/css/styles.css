@@ -13,7 +13,7 @@
   display:inline-block;
   color: #093169;
   font-weight:bold;
-  padding:10px 28px;
+  padding:10px 15px;
   text-decoration:none;
   text-shadow:1px 1px 0px #ffffff;
 }
@@ -86,21 +86,18 @@ h2.strapline {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   position: relative;
+  margin-bottom: 20px;
+  height: 280px; /* Equal height as well */
 }
-.speech .grid_4:after {
+.speech .row > *:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
   left: 30px;
-  top: 299px;
+  bottom: -15px;
   border: 7px solid;
   border-color: #c6c6c6 transparent transparent #c6c6c6;
-}
-.speech .row .grid_4 {
-  height: 300px; /* Equal height as well */
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
