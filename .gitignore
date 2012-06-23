@@ -1,0 +1,5 @@
+# Mac-specific things
+.DS_Store
+
+# (Linux) text editor temporary files
+*~
