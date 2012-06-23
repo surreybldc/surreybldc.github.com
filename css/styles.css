@@ -44,7 +44,8 @@ header.site h1 {
   text-align: center;
 }
 footer.site {
-  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid #c6c6c6;
   font-size: 0.8em;
 }
@@ -133,8 +134,8 @@ small {
   font-size: 0.75em;
 }
 .grid_2.thumbnail img {
-  width: 125px;
-  height: 125px;
+  width: 140px;
+  height: 140px;
 }
 a img {
   border: none; /* IE fix */
