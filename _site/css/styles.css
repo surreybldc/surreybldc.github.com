@@ -83,16 +83,16 @@ h2.strapline {
   -ms-box-sizing: border-box;
   position: relative;
 }
-.speech .grid_4:after {  
-  content: ' ';  
-  position: absolute;  
-  width: 0;  
-  height: 0;  
-  left: 30px;  
-  top: 299px;  
-  border: 7px solid;  
-  border-color: #c6c6c6 transparent transparent #c6c6c6;  
-} 
+.speech .grid_4:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 299px;
+  border: 7px solid;
+  border-color: #c6c6c6 transparent transparent #c6c6c6;
+}
 .speech .row .grid_4 {
   height: 300px; /* Equal height as well */
   margin-top: 20px;
@@ -135,6 +135,9 @@ small {
 .grid_2.thumbnail img {
   width: 125px;
   height: 125px;
+}
+a img {
+  border: none; /* IE fix */
 }
 /* Grid system */
 .row {
