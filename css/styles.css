@@ -85,7 +85,7 @@ header h1 {
   bottom: 22%;
 }
 .committeeImage img {
-  height: 60px;
+  height: 65px;
   float: left;
   padding-right: 5px;
 }
@@ -100,7 +100,7 @@ header h1 {
   background-image: /*url("/img/spikes-white-to-alpha.png"),*/ url("/img/spikes-alpha-to-white.png");
   background-color: rgba(0, 0, 0, 0.05);
   background-position: /*left top, */left bottom;
-  border-top: 5px solid #093169;
+  border-top: 4px solid #093169;
 }
 .spiel section:nth-child(even) {
   background-color: white;
