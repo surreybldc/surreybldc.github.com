@@ -10,12 +10,13 @@
   background-color:#ededed;
   border-radius:6px;
   border:1px solid #777;
-  display:inline-block;
+  display: block;
   color: #093169;
   font-weight:bold;
   padding:10px 15px;
   text-decoration:none;
   text-shadow:1px 1px 0px #ffffff;
+  text-align: center;
 }
 /* All the rest */
 html,
@@ -84,13 +85,38 @@ header h1 {
   bottom: 22%;
 }
 .spiel section header {
-  border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
-  background-color: rgba(0, 0, 0, 0.08);
+}
+.committeeImage img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  padding-right: 5px;
+}
+.committeeImage p {
+  clear: both;
+}
+.spiel section {
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+}
+.spiel section:nth-child(odd) {
+  background-image: /*url("/img/spikes-white-to-alpha.png"),*/ url("/img/spikes-alpha-to-white.png");
+  background-color: rgba(0, 0, 0, 0.05);
+  background-position: /*left top, */left bottom;
+  border-top: 5px solid #093169;
 }
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
   height: 400px;
+}
+section.calltoaction {
+  background-color: #093169;
+}
+section.calltoaction p,
+section.calltoaction h2,
+section.calltoaction h3 {
+  color: white;
 }
 nav {
   text-align: center;
@@ -115,7 +141,7 @@ nav a:active * {
   color: #093169;
 }
 .attention {
-  color: #222;
+  color: #093169;
 }
 small {
   text-transform: uppercase;
