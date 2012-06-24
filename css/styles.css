@@ -110,13 +110,8 @@ header h1 {
   background-image: url("/img/montage-web.jpg");
   height: 400px;
 }
-section.calltoaction {
-  background-color: #093169;
-}
-section.calltoaction p,
-section.calltoaction h2,
-section.calltoaction h3 {
-  color: white;
+.calltoaction {
+  font-weight: bold;
 }
 nav {
   text-align: center;
