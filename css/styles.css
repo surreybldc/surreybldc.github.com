@@ -105,6 +105,9 @@ header h1 {
   background-position: /*left top, */left bottom;
   border-top: 5px solid #093169;
 }
+.spiel section:nth-child(even) {
+  background-color: white;
+}
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
   height: 400px;
