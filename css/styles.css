@@ -84,9 +84,6 @@ header h1 {
 .strapline i {
   bottom: 22%;
 }
-.spiel section header {
-  border-bottom: 1px solid #c6c6c6;
-}
 .committeeImage img {
   height: 60px;
   float: left;
@@ -107,6 +104,12 @@ header h1 {
 }
 .spiel section:nth-child(even) {
   background-color: white;
+}
+.quotes img {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
@@ -178,7 +181,7 @@ a img {
 /* Bootstrap blockquotes */
 blockquote {
   padding: 0 0 0 15px;
-  border-left: 5px solid #EEE;
+  border-left: 5px solid #ddd;
   margin: 20px auto;
 }
 blockquote p {
