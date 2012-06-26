@@ -36,8 +36,7 @@ h1, h2, h3 {
   color: #093169;
   font-weight: normal;
 }
-header.site,
-footer.site {
+header.site {
   background-color: rgba(0, 0, 0, 0.05);
   color: #093169;
 }
@@ -50,7 +49,7 @@ header.site h1 {
 footer.site {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #c6c6c6;
+  /* border-top: 1px solid #c6c6c6; */
   font-size: 0.8em;
 }
 header img {
@@ -156,6 +155,11 @@ a img {
 }
 .invert * {
   color: white;
+}
+.invert a:hover,
+.invert a:active,
+.invert a:focus {
+  color: #c2a303;
 }
 /* Minor overrides */
 .container {
