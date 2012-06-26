@@ -60,9 +60,9 @@ header h1 {
   font-size: 0.8em;
 }
 .strapline {
-  height: 400px;
-  margin-top: -400px;
-  background-color: rgba(0, 0, 0, 0.45);
+  height: 300px;
+  margin-top: -300px;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: relative;
 }
@@ -79,7 +79,7 @@ header h1 {
   margin-top: -0.8em;
 }
 .strapline i {
-  bottom: 22%;
+  bottom: 15%;
 }
 .committeeImage img {
   height: 65px;
@@ -110,13 +110,13 @@ header h1 {
 }
 .hero-unit {
   background-image: url("/img/montage-web.jpg");
-  height: 400px;
+  height: 300px;
 }
 .calltoaction {
   font-weight: bold;
 }
 nav i {
-  font-size: 2em;
+  font-size: 1.5em;
   vertical-align: middle !important;
   padding-right: 5px;
 }
