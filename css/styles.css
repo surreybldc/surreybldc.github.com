@@ -40,9 +40,6 @@ header.site {
   background-color: rgba(0, 0, 0, 0.05);
   color: #093169;
 }
-header.site {
-  border-bottom: 1px solid #c6c6c6;
-}
 header.site h1 {
   text-align: center;
 }
@@ -50,8 +47,6 @@ a.siteTitle {
   text-decoration: none;
 }
 footer.site {
-  padding-top: 20px;
-  padding-bottom: 20px;
   /* border-top: 1px solid #c6c6c6; */
   font-size: 0.8em;
 }
@@ -120,9 +115,6 @@ header h1 {
 .calltoaction {
   font-weight: bold;
 }
-nav {
-  padding-top: 20px;
-}
 nav i {
   font-size: 2em;
   vertical-align: middle !important;
@@ -130,13 +122,6 @@ nav i {
 }
 nav a {
   text-decoration: none;
-  color: #555;
-}
-nav a:hover,
-nav a:hover *,
-nav a:active,
-nav a:active * {
-  color: #093169;
 }
 .attention {
   color: #093169;
@@ -173,11 +158,15 @@ a img {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
-.row:first-of-type {
-  padding-top: 20px;
-}
-.row {
-  padding-bottom: 20px;
+.row:first-of-type,
+.onecol,
+.twocol,
+.threecol,
+.fourcol,
+.fivecol,
+.sixcol {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /* Thumbnails */
 .thumbnail img {
