@@ -218,12 +218,12 @@ hr {
 
 @media handheld, only screen and (max-width: 767px) {
 
-	footer.site .row > * {
+	/* footer.site .row > * {
     border-bottom: 1px solid #c6c6c6;
 	}
 	footer.site .row > *:last-child {
 	  border-bottom: none;
-	}
+	}*/
 
 }
 
