@@ -151,6 +151,12 @@ small {
 a img {
   border: none; /* IE fix */
 }
+.invert {
+  background-color: #093169;
+}
+.invert * {
+  color: white;
+}
 /* Minor overrides */
 .container {
   padding-left: 0;
