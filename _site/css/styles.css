@@ -65,7 +65,7 @@ header h1 {
 .strapline {
   height: 300px;
   margin-top: -300px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   position: relative;
 }
@@ -95,6 +95,9 @@ header h1 {
 .spiel section {
   background-repeat: repeat-x;
   background-attachment: scroll;
+}
+.spiel section header h2 {
+  font-size: 2em;
 }
 .spiel section:nth-child(odd) {
   background-image: url("/img/spikes-white-to-alpha.png"), url("/img/spikes-alpha-to-white.png");
