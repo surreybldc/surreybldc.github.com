@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <!-- Enable media queries in misbehaving browsers -->
     <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <script type="text/javascript" src="js/nav-toggle.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,7 +25,12 @@
           </a>
         </div>
         <div class="invert">
-          <nav class="row">
+          <div class="row" id="toggle">
+            <a href="#">
+              <i class="icon-caret-right" id="toggleCaret"></i> Show or hide navigation</i>
+            </a>
+          </div>
+          <nav class="row" id="siteNav">
             <div class="twocol">
               <a href="/faqs.html">
                 <i class="icon-question-sign"></i> FAQs

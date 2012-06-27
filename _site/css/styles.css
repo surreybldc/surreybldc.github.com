@@ -199,6 +199,13 @@ hr {
   border-top: 1px solid #EEE;
   border-bottom: 1px solid white;
 }
+/* Nav on desktop */
+#toggle {
+  display: none;
+}
+#toggle a {
+  text-decoration: none;
+}
 
 /* ============================= */
 /* ! Layout for mobile version   */
@@ -212,6 +219,12 @@ hr {
 	footer.site .row > *:last-child {
 	  border-bottom: none;
 	}*/
+	#toggle {
+	  display: block;
+	}
+	#siteNav {
+	  display: none;
+	}
 
 }
 
