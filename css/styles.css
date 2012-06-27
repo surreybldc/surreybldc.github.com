@@ -84,7 +84,11 @@ header h1 {
 .committeeImage img {
   height: 65px;
   float: left;
-  padding-right: 5px;
+  margin-right: 5px;
+}
+img {
+  border: 1px solid #c6c6c6;
+  padding: 1px;
 }
 .committeeImage p {
   clear: both;
