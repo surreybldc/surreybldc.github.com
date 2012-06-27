@@ -29,6 +29,7 @@ body {
   font-size: 1em;
   line-height: 1.5em;
   color: #555;
+  background-image: url("/img/bgnoise.gif");
 }
 h1, h2, h3 {
   font-family: "Lobster13Regular";
@@ -38,19 +39,15 @@ h1, h2, h3 {
 header.site {
   background-color: rgba(0, 0, 0, 0.05);
   color: #093169;
+  border-bottom: 1px solid #c6c6c6;
 }
 header.site h1 {
   text-align: center;
-}
-header.site,
-.spiel section:nth-child(odd) {
-  background-image: url("/img/bgnoise.gif");
 }
 a.siteTitle {
   text-decoration: none;
 }
 footer.site {
-  /* border-top: 1px solid #c6c6c6; */
   font-size: 0.8em;
 }
 header img {
@@ -100,12 +97,17 @@ header h1 {
   font-size: 2em;
 }
 .spiel section:nth-child(odd) {
-  background-image: url("/img/spikes-white-to-alpha.png"), url("/img/spikes-alpha-to-white.png");
-  background-color: rgba(0, 0, 0, 0.05);
+  /*background-image: url("/img/spikes-white-to-alpha.png"), url("/img/spikes-alpha-to-white.png");
   background-position: left top, left bottom;
+*/
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #c6c6c6;
+  border-top: 1px solid #c6c6c6;
 }
 .spiel section:nth-child(even) {
-  background-color: white;
+  /*background-color: white;*/
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
 }
 .quotes img {
   height: 200px;
@@ -145,6 +147,7 @@ a img {
 }
 .invert {
   background-color: #093169;
+  border-top: 1px solid #334a7f;
 }
 .invert * {
   color: white;
