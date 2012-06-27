@@ -120,14 +120,18 @@ header h1 {
 .calltoaction {
   font-weight: bold;
 }
-nav i {
-  font-size: 1.5em;
-  vertical-align: middle !important;
-  padding-right: 5px;
+nav {
+  overflow: auto;
+  text-align: right;
 }
 nav a {
   text-decoration: none;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-left: 10px;
+  border-bottom: 3px solid #093169;
 }
+nav a,
 .attention {
   color: #093169;
 }
@@ -147,8 +151,12 @@ a img {
 }
 .invert a:hover,
 .invert a:active,
-.invert a:focus {
+.invert a:focus,
+nav a:hover,
+nav a:active,
+nav a:focus {
   color: #c2a303;
+  border-bottom-color: #c2a303;
 }
 /* Minor overrides */
 .container {
