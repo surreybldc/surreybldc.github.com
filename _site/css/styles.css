@@ -117,6 +117,11 @@ nav {
   overflow: auto;
   text-align: right;
 }
+nav,
+.spiel section header h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 nav a {
   text-decoration: none;
   display: inline-block;
@@ -172,16 +177,9 @@ a img {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
-.row:first-of-type {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.onecol,
-.twocol,
-.threecol,
-.fourcol,
-.fivecol,
-.sixcol {
+.onecol, .twocol, .threecol, .fourcol,
+.fivecol, .sixcol, .sevencol, .eightcol,
+.ninecol, .tencol, .elevencol, .twelvecol {
   padding-top: 10px;
   padding-bottom: 10px;
 }
