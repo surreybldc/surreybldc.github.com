@@ -185,6 +185,11 @@ a img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+iframe.videoEmbed {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
 /* Thumbnails */
 .thumbnail img {
   display: block;
