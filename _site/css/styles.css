@@ -39,6 +39,10 @@ header.site {
 a.siteTitle {
   text-decoration: none;
 }
+.siteTitle img {
+  display: block;
+  margin: 10px auto;
+}
 a.siteTitle h1 {
   text-transform: uppercase;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -47,10 +51,6 @@ a.siteTitle h1 {
 }
 footer.site {
   font-size: 0.8em;
-}
-header img {
-  display: block;
-  margin: 0 auto;
 }
 .strapline {
   height: 300px;
