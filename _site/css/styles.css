@@ -145,15 +145,17 @@ small {
   color: #999;
   font-size: 0.75em;
 }
-a img {
-  border: none; /* IE fix */
-}
 .invert {
   background-color: #093169;
   border-top: 1px solid #334a7f;
 }
+.invert,
 .invert * {
   color: white;
+}
+.invert.btn {
+  background: #093169;
+  text-shadow: 0 -1px 0px #999;
 }
 .invert a:hover,
 .invert a:active,
@@ -163,6 +165,9 @@ nav a:active,
 nav a:focus {
   color: #c2a303;
   border-bottom-color: #c2a303;
+}
+a img {
+  border: none; /* Minor IE9 thing */
 }
 /* Minor overrides */
 .container {
