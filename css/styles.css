@@ -93,6 +93,7 @@ img {
 }
 .spiel section header h2 {
   font-size: 2em;
+  line-height: 1em;
 }
 .spiel section:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.05);
@@ -118,7 +119,10 @@ nav {
   text-align: right;
 }
 nav,
-.spiel section header h2 {
+.spiel section header h2,
+.onecol, .twocol, .threecol, .fourcol,
+.fivecol, .sixcol, .sevencol, .eightcol,
+.ninecol, .tencol, .elevencol, .twelvecol {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -176,12 +180,6 @@ a img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
-}
-.onecol, .twocol, .threecol, .fourcol,
-.fivecol, .sixcol, .sevencol, .eightcol,
-.ninecol, .tencol, .elevencol, .twelvecol {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 iframe.videoEmbed {
   width: 100%;
