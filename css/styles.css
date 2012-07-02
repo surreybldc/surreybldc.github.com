@@ -153,6 +153,22 @@ small {
 .invert * {
   color: white;
 }
+.bigicon {
+  text-align: center;
+}
+.bigicon a {
+  color: #093169;
+  text-decoration: none;
+}
+.bigicon a:hover,
+.bigicon a:active,
+.bigicon a:focus {
+  color: #c2a303;
+}
+.bigicon i {
+  width: 100%;
+  font-size: 5em;
+}
 a.invert:hover,
 a.invert:active,
 a.invert:focus,
@@ -210,7 +226,7 @@ blockquote small::before {
 blockquote small {
   display: block;
 }
-blockquote .massive {
+.massive {
   font-size: 2.8em;
   line-height: 1em;
 }
