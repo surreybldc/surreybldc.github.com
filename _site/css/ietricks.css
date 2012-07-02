@@ -1,9 +1,0 @@
-/* A few CSS tricks for IE users */
-.strapline {
-  /* Background color RGBA effect for <= IE8 */
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
-  zoom: 1;
-}
-.strapline h2 {
-  text-align: center;
-}

@@ -56,6 +56,8 @@ footer.site {
   height: 300px;
   margin-top: -300px;
   background-color: rgba(0, 0, 0, 0.4);
+  /* Background color RGBA effect for <= IE8 */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
   width: 100%;
   position: relative;
 }
