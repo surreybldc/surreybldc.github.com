@@ -43,6 +43,18 @@
           </div>
         </div>
       </header>
+      <div class="hero-unit">
+      </div>
+      <div class="strapline">
+        <h2>
+          {% if page.longtitle %}
+            {{ page.longtitle }} 
+          {% else %}
+            The home of university dancesport at Surrey.
+          {% endif %}
+        </h2>
+        <i class="icon-circle-arrow-down"></i>
+      </div>
       {{ content }}
       <footer class="site invert">
         <div class="row">
