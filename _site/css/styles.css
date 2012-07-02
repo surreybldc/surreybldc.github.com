@@ -93,7 +93,7 @@ img {
   background-repeat: repeat-x;
   background-attachment: scroll;
 }
-.spiel section header h2 {
+.spiel section h2 {
   font-size: 2em;
   line-height: 1em;
 }
@@ -121,7 +121,7 @@ nav {
   text-align: right;
 }
 nav,
-.spiel section header h2,
+.spiel section h2,
 .onecol, .twocol, .threecol, .fourcol,
 .fivecol, .sixcol, .sevencol, .eightcol,
 .ninecol, .tencol, .elevencol, .twelvecol {
