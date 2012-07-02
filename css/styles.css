@@ -55,7 +55,7 @@ footer.site {
 .strapline {
   height: 300px;
   margin-top: -300px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   position: relative;
 }
@@ -111,7 +111,7 @@ img {
   display: block;
 }
 .hero-unit {
-  background-image: url("/img/montage-web.jpg");
+  background-image: url("/img/montage/montage-mk3-web.jpg");
   height: 300px;
 }
 nav {
@@ -183,7 +183,7 @@ a img {
 }
 iframe.videoEmbed {
   width: 100%;
-  height: 350px;
+  height: 250px;
   border: none;
 }
 /* Thumbnails */
