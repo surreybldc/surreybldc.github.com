@@ -78,7 +78,7 @@ footer.site {
   bottom: 10%;
 }
 .committeeImage img {
-  height: 65px;
+  height: 70px;
   float: left;
   margin-right: 5px;
 }
@@ -96,15 +96,14 @@ img {
 .spiel section h2 {
   font-size: 2em;
   line-height: 1em;
+  text-align: center;
+  border-bottom: 1px solid white;
+  border-top: 1px solid #c6c6c6;
+  background-color: #093169;
+  color: white;
 }
 .spiel section:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #c6c6c6;
-  border-top: 1px solid #c6c6c6;
-}
-.spiel section:nth-child(even) {
-  border-bottom: 1px solid #eaeaea;
-  border-top: 1px solid #eaeaea;
 }
 .quotes img {
   height: 200px;
@@ -150,9 +149,11 @@ small {
 .invert {
   background-color: #093169;
   border-top: 1px solid #334a7f;
+  border-bottom: 1px solid #334a7f;
 }
 .invert,
-.invert * {
+.invert *,
+.spiel section h2 {
   color: white;
 }
 .bigicon {
