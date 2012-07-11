@@ -39,9 +39,15 @@ header.site {
 a.siteTitle {
   text-decoration: none;
 }
+img {
+  border: 1px solid #c6c6c6;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .siteTitle img {
   display: block;
   margin: 10px auto;
+  background-color: transparent;
 }
 a.siteTitle h1 {
   text-transform: uppercase;
@@ -82,10 +88,6 @@ footer.site {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-img {
-  border: 1px solid #c6c6c6;
-  padding: 1px;
 }
 .committeeImage small,
 .committeeImage h3 {
@@ -132,8 +134,8 @@ nav,
 .onecol, .twocol, .threecol, .fourcol,
 .fivecol, .sixcol, .sevencol, .eightcol,
 .ninecol, .tencol, .elevencol, .twelvecol {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 nav a {
   text-decoration: none;
@@ -198,8 +200,8 @@ a img {
   padding-right: 0;
 }
 .container .row {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -222,7 +224,7 @@ iframe.videoEmbed {
 blockquote {
   padding: 0 0 0 15px;
   border-left: 5px solid #ddd;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 blockquote p {
   margin-bottom: 0;
