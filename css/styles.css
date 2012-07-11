@@ -55,9 +55,9 @@ footer.site {
 .strapline {
   height: 300px;
   margin-top: -300px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.35);
   /* Background color RGBA effect for <= IE8 */
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#70000000);
   width: 100%;
   position: relative;
 }
@@ -78,16 +78,19 @@ footer.site {
   bottom: 10%;
 }
 .committeeImage img {
-  height: 70px;
-  float: left;
-  margin-right: 5px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 img {
   border: 1px solid #c6c6c6;
   padding: 1px;
 }
-.committeeImage p {
-  clear: both;
+.committeeImage small,
+.committeeImage h3 {
+  text-align: center;
+  display: block;
 }
 .spiel section {
   background-repeat: repeat-x;
@@ -146,7 +149,6 @@ nav a,
 small {
   text-transform: uppercase;
   color: #999;
-  font-size: 0.75em;
 }
 .invert.btn {
   text-shadow: 0 -1px 0px #334a7f;
