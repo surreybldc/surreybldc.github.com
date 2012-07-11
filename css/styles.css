@@ -40,14 +40,12 @@ a.siteTitle {
   text-decoration: none;
 }
 img {
-  border: 1px solid #c6c6c6;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 4px #808080;
 }
 .siteTitle img {
   display: block;
   margin: 10px auto;
-  background-color: transparent;
+  box-shadow: none;
 }
 a.siteTitle h1 {
   text-transform: uppercase;
@@ -84,14 +82,9 @@ footer.site {
   bottom: 10%;
 }
 .committeeImage img {
-  height: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: 250px;
 }
-.committeeImage small,
-.committeeImage h3 {
-  text-align: center;
+.committeeImage small {
   display: block;
 }
 .spiel section {
