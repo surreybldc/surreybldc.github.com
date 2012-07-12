@@ -82,10 +82,11 @@ footer.site {
   bottom: 10%;
 }
 .committeeImage img {
-  height: 250px;
-}
-.committeeImage small {
+  height: 220px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 .spiel section {
   background-repeat: repeat-x;
