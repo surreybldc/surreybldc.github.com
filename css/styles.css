@@ -35,7 +35,7 @@ h1, h2, h3 {
 header.site {
   background-color: rgba(0, 0, 0, 0.05);
   color: #093169;
-  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 30px;
 }
 a.siteTitle {
   text-decoration: none;
