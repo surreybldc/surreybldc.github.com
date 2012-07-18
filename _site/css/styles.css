@@ -6,6 +6,7 @@
   box-shadow:inset 0px 1px 0px 0px #fff;
   border-radius:6px;
   border:1px solid #777;
+  text-shadow: -1px -1px #777;
   display: block;
   color: #093169;
   font-weight:bold;
