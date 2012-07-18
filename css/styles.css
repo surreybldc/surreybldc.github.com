@@ -88,14 +88,12 @@ footer.site {
   margin-right: auto;
   margin-bottom: 20px;
 }
-.spiel section {
-  background-repeat: repeat-x;
-  background-attachment: scroll;
-}
-.spiel section h2 {
+section h2 {
   font-size: 2em;
   line-height: 1em;
   text-align: center;
+}
+.spiel section h2 {
   border-bottom: 1px solid white;
   border-top: 1px solid #c6c6c6;
   background-color: #093169;
@@ -233,6 +231,22 @@ blockquote small {
 .massive {
   font-size: 2.5em;
   line-height: 1em;
+}
+.btn-primary {
+  background-color: #a6bc00;
+  color: white !important;
+}
+.calltoaction a {
+  display: inline-block;
+}
+.calltoaction .actionicon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-top: 4px solid #093169;
+}
+.calltoaction * {
+  text-align: center;
 }
 
 /* ============================= */
