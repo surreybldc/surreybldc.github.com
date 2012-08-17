@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-weight: normal;
 }
 header.site {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #093169;
   padding-bottom: 30px;
 }
@@ -106,7 +106,7 @@ section h2 {
   border: none;
 }
 .spiel section:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .quotes img {
   height: 200px;
