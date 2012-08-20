@@ -6,6 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
     <style type="text/css">
+      /* Note: Outlook ignores any (inline) rules with !important */
       body, html {
         margin:0;
         padding:0;
@@ -13,13 +14,13 @@
       }
       body{
         font-family:"Helvetica Neue", Segoe UI, sans-serif;
-        font-size:16px; /* Because email clients love tiny text */
-        color:#555555;
+        font-size:18px; /* Because email clients love tiny text */
         text-shadow:0px 1px white;
       }
       body,
       body * {
         line-height:1.5em; /* Hotmail fix */      
+        color:#555555;
       }
       .siteTitle img {
         margin-top: 10px;
@@ -56,16 +57,12 @@
       #footer {
         overflow: auto;
       }
-      h1,h2,h3,h4,h5,h6{
-        color:#555555 !important;
+      h2,h3,h4,h5,h6{
+        color:#555555 !important; /* Hotmail 'green headings' fix */
       }
       .brand,
-      body a:link,
-      body a:visited {
-        color:#093169 !important;
-      }
-      body a:focus,body a:hover,body a:active{
-        color:#c2a303 !important;
+      a {
+        color:#093169; /* link pseudoclass styles are ignored */
       }
     </style>
   </head>
@@ -82,17 +79,14 @@
       </div>
       <div class="fixedwidth">
         <!-- editable block -->
-        <h2 class="brand" mc:edit="content_1">
-          Hello there, *|IF:FNAME|**|FNAME|**|ELSE:|*dancer!*|END:IF|*
-        </h2>
+        <strong class="brand" mc:edit="content_1">Hello there, *|IF:FNAME|* *|FNAME|* *|ELSE:|* dancer! *|END:IF|*</strong>
         <!-- /editable -->
       </div>
       <div>
         <!-- editable block -->
-        <div id="content" class="fixedwidth" mc:edit="content_2">			
-          <h3>
-            Heading 3
-          </h3>
+        <div id="content" class="fixedwidth" mc:edit="content_2">
+          <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          <h3>Heading 3</h3>
           <p>
             The main body of the email. Delete all of this placeholder text and replace it with what you want to say.
           </p>
@@ -101,9 +95,7 @@
       </div>
       <div class="fixedwidth">
         <!-- editable block -->
-        <h2 class="brand" mc:edit="content_3">
-          See you there!
-        </h2>
+        <strong class="brand" mc:edit="content_3">See you there!</strong>
         <!-- /editable -->
         <!-- editable block -->
         <p class="smallertext" mc:edit="content_4" mc:hideable>
