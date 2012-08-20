@@ -17,35 +17,24 @@
         color:#555555;
         text-shadow:0px 1px white;
       }
-      /* From website */
-      a.siteTitle {
+      .siteTitle img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .siteTitle a {
+        text-transform: uppercase;
         text-decoration: none;
       }
-      a img {
-        border:none;
-      }
-      img.siteTitle {
-        display: block;
-        margin: 10px auto;
-      }
-      a.siteTitle {
-        display: block;
-        text-transform: uppercase;
+      .siteTitle {
         text-align: center;
-      }
-      /* Table styles */
-      table{
-        border-collapse:collapse;
-      }
-      tr:nth-child(odd){
-        background-color:#eeeeee;
-      }
-      td{
-        padding:0 0.5em;
       }
       #footer,
       #footer > * {
         text-align: center;
+      }
+      #footer {
+        background-color:#f0f0f0;
+        border-top: 1px solid #fff;
       }
       .fixedwidth,
       #footer > * {
@@ -55,14 +44,17 @@
         padding:0 1em;
       }
       .header {
-        padding: 1em 0;
       }
       .smallertext{
-        font-size:0.9em;
+        font-size:0.85em;
       }
       .lightcontrast{
         background-color:#e6e6e6;
-        border:1px solid #c6c6c6;
+        border-bottom:1px solid #c6c6c6;
+      }
+      .lightcontrast,
+      #footer {
+        overflow: auto;
       }
       h1,h2,h3,h4,h5,h6{
         color:#555555 !important;
@@ -80,10 +72,13 @@
 	<body>
 	  <div class="lightcontrast">
       <div class="header fixedwidth">
-        <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo" class="siteTitle">
-        <a href="http://surreybldc.com/index.html" title="Home page" class="siteTitle smallertext">
-          Surrey BLDC
-        </a>
+        <p class="siteTitle">
+          <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo">
+          <br>
+          <a href="http://surreybldc.com/index.html" title="Home page" class="smallertext">
+            Surrey BLDC
+          </a>
+        </p>
       </div>
       <div class="fixedwidth">
         <!-- editable block -->
@@ -116,23 +111,23 @@
         <!-- /editable -->
         <!-- editable block -->
         <p class="smallertext" mc:edit="content_4" mc:hideable>
-          <strong>PS:</strong> The place to put any "PS" or "one more thing" items you have to mention this week. Delete this section if you have no footer content.
+          <strong>PS:</strong> Any "PS" or "one more thing" items go here. Hide this section if there is no content.
         </p>
         <!-- /editable -->
       </div>
     </div>
-    <div id="footer">
+    <div id="footer" class="smallertext">
       <p>
         &copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*
       </p>
-      <p class="smallertext">
+      <p>
         <a href="*|USER:URL|*" title="Surrey BLDC Facebook group">Find us on Facebook</a>
         <br>
         <a href="*|UPDATE_PROFILE|*" title="Change your email address and update your subscription preferences">Change my settings</a>
         <br>
         <a href="*|UNSUB|*" title="Unsubscribe from this mailing list">Unsubscribe</a>
       </p>
-      <p class="smallertext">
+      <p>
         *|LIST:ADDRESS|*
       </p>
       <p>
