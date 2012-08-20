@@ -83,11 +83,7 @@
       <div class="fixedwidth">
         <!-- editable block -->
         <h2 class="brand" mc:edit="content_1">
-          Hello there, *|IF:FNAME|*
-          *|FNAME|*
-          *|ELSE:|*
-          dancer!
-          *|END:IF|*
+          Hello there, *|IF:FNAME|**|FNAME|**|ELSE:|*dancer!*|END:IF|*
         </h2>
         <!-- /editable -->
       </div>
@@ -117,9 +113,7 @@
       </div>
     </div>
     <div id="footer" class="smallertext">
-      <p>
-        &copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*
-      </p>
+      <p>&copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*</p>
       <p>
         <a href="http://www.facebook.com/groups/176881515701274/" title="Surrey BLDC Facebook group">Find us on Facebook</a>
         <br>
@@ -127,12 +121,8 @@
         <br>
         <a href="*|UNSUB|*" title="Unsubscribe from this mailing list">Unsubscribe</a>
       </p>
-      <p>
-        *|LIST:ADDRESS|*
-      </p>
-      <p>
-        *|IF:REWARDS|* *|REWARDS|* *|END:IF|*
-      </p>
+      <p>*|LIST:ADDRESS|*</p>
+      <p>*|IF:REWARDS|* *|REWARDS|* *|END:IF|*</p>
     </div><!--footer-->
 	</body>
 </html>
