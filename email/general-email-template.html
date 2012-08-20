@@ -13,10 +13,9 @@
       body{
         font-family:"Helvetica Neue", Segoe UI, sans-serif;
         line-height:1.5em;
-        font-size:1em;
+        font-size:16px; /* Because email clients love tiny text */
         color:#555555;
         text-shadow:0px 1px white;
-        background-color:#e0e0e0;
       }
       /* From website */
       a.siteTitle {
@@ -25,11 +24,12 @@
       a img {
         border:none;
       }
-      .siteTitle img {
+      img.siteTitle {
         display: block;
         margin: 10px auto;
       }
-      a.siteTitle h1 {
+      a.siteTitle {
+        display: block;
         text-transform: uppercase;
         text-align: center;
       }
@@ -43,27 +43,26 @@
       td{
         padding:0 0.5em;
       }
+      #footer,
       #footer > * {
-        margin:1em auto;
-        width:200px;
+        text-align: center;
       }
-      #footer {
-        border-top:1px solid #c6c6c6;
-        border-bottom:1px solid #c6c6c6;
-      }
-      .fixedwidth{
+      .fixedwidth,
+      #footer > * {
         max-width:600px;
-        margin:0 auto;
+        margin-left:auto;
+        margin-right:auto;
         padding:0 1em;
       }
       .header {
         padding: 1em 0;
       }
       .smallertext{
-        font-size:0.8em;
+        font-size:0.9em;
       }
       .lightcontrast{
-        background-color:#f6f6f6;
+        background-color:#e6e6e6;
+        border:1px solid #c6c6c6;
       }
       h1,h2,h3,h4,h5,h6{
         color:#555555 !important;
@@ -79,36 +78,36 @@
     </style>
   </head>
 	<body>
-	  <div class="header fixedwidth">
-      <a href="http://surreybldc.com/index.html" title="Home page" class="siteTitle">
-        <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo">
-        <h1 class="brand smallertext">Surrey BLDC</h1>
-      </a>
-    </div>
-    <div class="fixedwidth">
-      <!-- editable block -->
-      <h2 class="brand" mc:edit="content_1">
-        Hello there, *|IF:FNAME|*
-        *|FNAME|*
-        *|ELSE:|*
-        dancer!
-        *|END:IF|*
-      </h2>
-      <!-- /editable -->
-    </div>
-    <div>
-      <!-- editable block -->
-      <div id="content" class="fixedwidth" mc:edit="content_2">			
-        <h3>
-          Heading 3
-        </h3>
-        <p>
-          The main body of the email. Delete all of this placeholder text and replace it with what you want to say.
-        </p>
+	  <div class="lightcontrast">
+      <div class="header fixedwidth">
+        <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo" class="siteTitle">
+        <a href="http://surreybldc.com/index.html" title="Home page" class="siteTitle smallertext">
+          Surrey BLDC
+        </a>
       </div>
-      <!-- /editable -->
-    </div>
-    <div class="borderedbox">
+      <div class="fixedwidth">
+        <!-- editable block -->
+        <h2 class="brand" mc:edit="content_1">
+          Hello there, *|IF:FNAME|*
+          *|FNAME|*
+          *|ELSE:|*
+          dancer!
+          *|END:IF|*
+        </h2>
+        <!-- /editable -->
+      </div>
+      <div>
+        <!-- editable block -->
+        <div id="content" class="fixedwidth" mc:edit="content_2">			
+          <h3>
+            Heading 3
+          </h3>
+          <p>
+            The main body of the email. Delete all of this placeholder text and replace it with what you want to say.
+          </p>
+        </div>
+        <!-- /editable -->
+      </div>
       <div class="fixedwidth">
         <!-- editable block -->
         <h2 class="brand" mc:edit="content_3">
@@ -122,25 +121,23 @@
         <!-- /editable -->
       </div>
     </div>
-    <div id="footer" class="lightcontrast">
-        <div>
-          *|IF:REWARDS|* *|REWARDS|* *|END:IF|*
-        </div>
-        <h3>
-          &copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*
-        </h3>
-        <div class="smallertext">
-            <p>
-              <a href="*|USER:URL|*" title="Surrey BLDC Facebook group">Find us on Facebook</a>
-              <br>
-              <a href="*|UPDATE_PROFILE|*" title="Change your email address and update your subscription preferences">Change my settings</a>
-              <br>
-              <a href="*|UNSUB|*" title="Unsubscribe from this mailing list">Unsubscribe</a>
-          </p>
-            <p>
-              *|LIST:ADDRESS|*
-            </p>
-        </div>
+    <div id="footer">
+      <p>
+        &copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*
+      </p>
+      <p class="smallertext">
+        <a href="*|USER:URL|*" title="Surrey BLDC Facebook group">Find us on Facebook</a>
+        <br>
+        <a href="*|UPDATE_PROFILE|*" title="Change your email address and update your subscription preferences">Change my settings</a>
+        <br>
+        <a href="*|UNSUB|*" title="Unsubscribe from this mailing list">Unsubscribe</a>
+      </p>
+      <p class="smallertext">
+        *|LIST:ADDRESS|*
+      </p>
+      <p>
+        *|IF:REWARDS|* *|REWARDS|* *|END:IF|*
+      </p>
     </div><!--footer-->
 	</body>
 </html>
