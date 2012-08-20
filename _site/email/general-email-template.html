@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>A message from Surrey BLDC</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <style type="text/css">
+      body, html {
+        margin:0;
+        padding:0;	  
+      }
+      body{
+        font-family:"Helvetica Neue", Segoe UI, sans-serif;
+        line-height:1.5em;
+        font-size:1em;
+        color:#555555;
+        text-shadow:0px 1px white;
+        background-color:#e0e0e0;
+      }
+      /* From website */
+      a.siteTitle {
+        text-decoration: none;
+      }
+      a img {
+        border:none;
+      }
+      .siteTitle img {
+        display: block;
+        margin: 10px auto;
+      }
+      a.siteTitle h1 {
+        text-transform: uppercase;
+        text-align: center;
+      }
+      /* Table styles */
+      table{
+        border-collapse:collapse;
+      }
+      tr:nth-child(odd){
+        background-color:#eeeeee;
+      }
+      td{
+        padding:0 0.5em;
+      }
+      #footer > * {
+        margin:1em auto;
+        width:200px;
+      }
+      #footer {
+        border-top:1px solid #c6c6c6;
+        border-bottom:1px solid #c6c6c6;
+      }
+      .fixedwidth{
+        max-width:600px;
+        margin:0 auto;
+        padding:0 1em;
+      }
+      .header {
+        padding: 1em 0;
+      }
+      .smallertext{
+        font-size:0.8em;
+      }
+      .lightcontrast{
+        background-color:#f6f6f6;
+      }
+      h1,h2,h3,h4,h5,h6{
+        color:#555555 !important;
+      }
+      .brand,
+      body a:link,
+      body a:visited {
+        color:#093169 !important;
+      }
+      body a:focus,body a:hover,body a:active{
+        color:#c2a303 !important;
+      }
+    </style>
+  </head>
+	<body>
+	  <div class="header fixedwidth">
+      <a href="http://surreybldc.com/index.html" title="Home page" class="siteTitle">
+        <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo">
+        <h1 class="brand smallertext">Surrey BLDC</h1>
+      </a>
+    </div>
+    <div class="fixedwidth">
+      <!-- editable block -->
+      <h2 class="brand" mc:edit="content_1">
+        Hello there, *|IF:FNAME|*
+        *|FNAME|*
+        *|ELSE:|*
+        dancer!
+        *|END:IF|*
+      </h2>
+      <!-- /editable -->
+    </div>
+    <div>
+      <!-- editable block -->
+      <div id="content" class="fixedwidth" mc:edit="content_2">			
+        <h3>
+          Heading 3
+        </h3>
+        <p>
+          The main body of the email. Delete all of this placeholder text and replace it with what you want to say.
+        </p>
+      </div>
+      <!-- /editable -->
+    </div>
+    <div class="borderedbox">
+      <div class="fixedwidth">
+        <!-- editable block -->
+        <h2 class="brand" mc:edit="content_3">
+          See you there!
+        </h2>
+        <!-- /editable -->
+        <!-- editable block -->
+        <p class="smallertext" mc:edit="content_4" mc:hideable>
+          <strong>PS:</strong> The place to put any "PS" or "one more thing" items you have to mention this week. Delete this section if you have no footer content.
+        </p>
+        <!-- /editable -->
+      </div>
+    </div>
+    <div id="footer" class="lightcontrast">
+        <div>
+          *|IF:REWARDS|* *|REWARDS|* *|END:IF|*
+        </div>
+        <h3>
+          &copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*
+        </h3>
+        <div class="smallertext">
+            <p>
+              <a href="*|USER:URL|*" title="Surrey BLDC Facebook group">Find us on Facebook</a>
+              <br>
+              <a href="*|UPDATE_PROFILE|*" title="Change your email address and update your subscription preferences">Change my settings</a>
+              <br>
+              <a href="*|UNSUB|*" title="Unsubscribe from this mailing list">Unsubscribe</a>
+          </p>
+            <p>
+              *|LIST:ADDRESS|*
+            </p>
+        </div>
+    </div><!--footer-->
+	</body>
+</html>
