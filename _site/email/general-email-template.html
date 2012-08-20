@@ -8,14 +8,18 @@
     <style type="text/css">
       body, html {
         margin:0;
-        padding:0;	  
+        padding:0;
+        width: 100% !important; /* Hotmail fix */
       }
       body{
         font-family:"Helvetica Neue", Segoe UI, sans-serif;
-        line-height:1.5em;
         font-size:16px; /* Because email clients love tiny text */
         color:#555555;
         text-shadow:0px 1px white;
+      }
+      body,
+      body * {
+        line-height:1.5em; /* Hotmail fix */      
       }
       .siteTitle img {
         margin-top: 10px;
@@ -25,11 +29,9 @@
         text-transform: uppercase;
         text-decoration: none;
       }
-      .siteTitle {
-        text-align: center;
-      }
       #footer,
-      #footer > * {
+      #footer > *,
+      .siteTitle {
         text-align: center;
       }
       #footer {
@@ -42,8 +44,6 @@
         margin-left:auto;
         margin-right:auto;
         padding:0 1em;
-      }
-      .header {
       }
       .smallertext{
         font-size:0.85em;
@@ -71,9 +71,9 @@
   </head>
 	<body>
 	  <div class="lightcontrast">
-      <div class="header fixedwidth">
+      <div class="fixedwidth">
         <p class="siteTitle">
-          <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="Club logo">
+          <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="">
           <br>
           <a href="*|USER:URL|*" title="Club website" class="smallertext">
             Surrey BLDC
