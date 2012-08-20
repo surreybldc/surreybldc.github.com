@@ -35,10 +35,6 @@
       .siteTitle {
         text-align: center;
       }
-      #footer {
-        background-color: #f0f0f0;
-        border-top: 1px solid #fff;
-      }
       .fixedwidth,
       #footer > * {
         max-width: 600px;
@@ -47,14 +43,20 @@
         padding: 0 1em;
       }
       .smallertext {
-        font-size: 0.85em;
+        font-size: 0.8em;
+      }
+      .mediumcontrast {
+        background-color: #e6e6e6;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #c6c6c6;
       }
       .lightcontrast {
-        background-color: #e6e6e6;
+        background-color: #f0f0f0;
+        border-top: 1px solid #fff;
         border-bottom: 1px solid #c6c6c6;
       }
       .lightcontrast,
-      #footer {
+      .mediumcontrast {
         overflow: auto;
       }
       h2,h3,h4,h5,h6{
@@ -67,7 +69,7 @@
       .inversebrand {
         background-color: #093169;
         border-top: 1px solid #c6c6c6;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #093169;
       }
       .inversebrand * {
         color: #e0e0e0;
@@ -77,44 +79,34 @@
     </style>
   </head>
 	<body>
-	  <div class="lightcontrast">
-      <div class="fixedwidth">
-        <p class="siteTitle">
-          <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="">
-          <br>
-          <a href="*|USER:URL|*" title="Club website" class="smallertext">
-            Surrey BLDC
-          </a>
-        </p>
-      </div>
+    <div class="fixedwidth">
+      <p class="siteTitle">
+        <img src="http://surreybldc.com/img/logo/dancers-surrey-colours-web.png" alt="">
+        <br>
+        <a href="*|USER:URL|*" title="Club website" class="smallertext">
+          Surrey BLDC
+        </a>
+      </p>
+    </div>
       <div class="inversebrand">
-        <!-- editable block -->
         <p class="fixedwidth">Hello there, *|IF:FNAME|* *|FNAME|* *|ELSE:|* dancer! *|END:IF|*</p>
-        <!-- /editable -->
       </div>
-      <div>
-        <!-- editable block -->
-        <div id="content" class="fixedwidth" mc:edit="content">
+      <div class="mediumcontrast">
+        <div class="fixedwidth" mc:edit="content">
           <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
           <h3>Heading 3</h3>
           <p>
             The main body of the email. Delete all of this placeholder text and replace it with what you want to say.
           </p>
         </div>
-        <!-- /editable -->
-      </div>
       <div class="fixedwidth">
-        <!-- editable block -->
         <strong class="brand" mc:edit="valediction">See you there!</strong>
-        <!-- /editable -->
-        <!-- editable block -->
         <p class="smallertext" mc:edit="postscript" mc:hideable>
           <strong>PS:</strong> Any "PS" or "one more thing" items go here. Hide this section if there is no content.
         </p>
-        <!-- /editable -->
       </div>
     </div>
-    <div id="footer" class="smallertext">
+    <div id="footer" class="smallertext lightcontrast">
       <p>&copy; *|LIST:COMPANY|*, *|CURRENT_YEAR|*</p>
       <p>
         <a href="http://www.facebook.com/groups/176881515701274/" title="Surrey BLDC Facebook group">Find us on Facebook</a>
