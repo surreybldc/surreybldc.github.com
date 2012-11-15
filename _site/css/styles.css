@@ -32,11 +32,6 @@ h1, h2, h3 {
   color: #093169;
   font-weight: normal;
 }
-header.site {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #093169;
-  padding-bottom: 30px;
-}
 a.siteTitle {
   text-decoration: none;
 }
@@ -106,7 +101,12 @@ section h2 {
   border: none;
 }
 .spiel section:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+header.site {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #093169;
+  padding-bottom: 30px;
 }
 .quotes img {
   height: 200px;
@@ -140,6 +140,9 @@ nav a {
 nav a,
 .attention {
   color: #093169;
+}
+.attention {
+  font-weight: bold;
 }
 small {
   text-transform: uppercase;
