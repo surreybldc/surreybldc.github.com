@@ -3,3 +3,6 @@
 
 # (Linux) text editor temporary files
 *~
+
+# Vagrant bits
+.vagrant
