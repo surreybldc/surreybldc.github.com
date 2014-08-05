@@ -1,9 +1,0 @@
-DEPENDENCIES
-  jruby (~> 0.2.5)
-
-GRAPH
-  install_from (3.0.4)
-  java (1.25.0)
-  jruby (0.2.5)
-    install_from (>= 0.0.0)
-    java (>= 0.0.0)
