@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   config.vm.provision "chef_solo" do |chef|
     chef.run_list = [
-      "recipe[ruby::default]"
+      "recipe[jruby::default]"
     ]
     
     # You may also specify custom JSON attributes:
