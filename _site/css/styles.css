@@ -245,17 +245,10 @@ blockquote small {
   background-color: #a6bc00;
   color: white !important;
 }
-.calltoaction a {
-  display: inline-block;
-}
-.calltoaction .actionicon {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-top: 4px solid #093169;
-}
-.calltoaction * {
-  text-align: center;
+.spiel section.calltoaction h2 {
+  border: none;
+  background-color: transparent;
+  color: #093169;
 }
 
 /* ============================= */
