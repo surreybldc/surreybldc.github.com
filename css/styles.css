@@ -88,17 +88,6 @@ section h2 {
   line-height: 1em;
   text-align: center;
 }
-.spiel section h2 {
-  border-bottom: 1px solid white;
-  border-top: 1px solid #c6c6c6;
-  background-color: #093169;
-  color: white;
-}
-.spiel section:first-of-type h2 {
-  background-color: transparent;
-  color: #093169;
-  border: none;
-}
 .spiel section:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -245,17 +234,24 @@ blockquote small {
   background-color: #a6bc00;
   color: white !important;
 }
-.spiel section.calltoaction h2 {
-  border: none;
-  background-color: transparent;
-  color: #093169;
-}
 
 /* ============================= */
 /* ! Layout for mobile version   */
 /* ============================= */
 
 @media handheld, only screen and (max-width: 767px) {
+
+.spiel section h2 {
+  border-bottom: 1px solid white;
+  border-top: 1px solid #c6c6c6;
+  background-color: #093169;
+  color: white;
+}
+.spiel section:first-of-type h2 {
+  background-color: transparent;
+  color: #093169;
+  border: none;
+}
 
 }
 
