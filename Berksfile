@@ -1,4 +1,4 @@
 source "https://api.berkshelf.com"
 
 # Ruby installer
-cookbook 'ruby', '~> 0.9.2'
+cookbook 'jruby', '~> 0.2.5'

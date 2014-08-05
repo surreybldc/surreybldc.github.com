@@ -29,10 +29,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     # You may also specify custom JSON attributes:
     chef.json = {
-      languages: {
-        ruby: {
-          default_version: "1.9.1"
-        }
+      jruby: {
+        version: "1.7.13"
       }
     }
   end
